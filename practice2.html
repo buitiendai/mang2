@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Dùng 2 mảng để in ra bảng cửu chương
+        let numbers1 = [2, 3, 4, 5, 6, 7, 8, 9];
+        let numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        let bcc;
+        bcc = "<table border='1' width='50%' cellspacing='0' cellpadding='3'>"
+        for(let j = 2; j < numbers1.length; j++) {
+            bcc = bcc + "<tr>";
+            for(let i = 1; i < numbers2.length; i++) {
+                bcc = bcc + "<td>" + i + " x " + j + " = " + i * j + "</td>";
+            }
+            bcc = bcc + "</tr>";
+        }
+        bcc = bcc + "</table>";
+        document.write(bcc);
+    </script>
+</body>
+</html>

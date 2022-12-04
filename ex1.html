@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Mảng: là tập hợp các giá trị
+        let animals = [
+            'cat', // vị trí 0
+            'dog', // vị trí 1
+            'bear', // vị trí 2
+            1, // vị trí 3
+            null // vị trí 4
+        ]
+        // document.write(animals.length);
+
+        let animals2 = new Array( // kiểu object
+            'cat',
+            'dog',
+            'bear'
+        )
+
+        // Các phương thức tương tác với mảng sử dụng cho create, read, update, delete
+        // keyword: array method javascript
+        //- push: thêm 1 hoặc nhiều phần tử vào cuối mảng
+        animals.push('fish'); 
+        // document.write(animals);
+        //- pop: xóa 1 phần tử ở cuối mảng
+        animals.pop();
+        // document.write(animals);
+
+        // update
+        // splice: xóa hoặc thay thế hoặc chèn phần tử trong mảng ở vị trí bất kỳ:
+        // animals.splice(3, 2); // nhập vào vị trí của phần tử bắt đầu muốn xóa và nhập vào số phần tử muốn xóa, sau đó nhập vào phần tử muốn thay thế
+        animals.splice(3,2,'human','shark');
+        // document.write(animals);
+
+        // join: in ra chuỗi và có thể setup lại kí tự ở giữa các phần tử.
+        // document.write(animals.join(';'));
+        
+        //shift: Xóa phần tử ở đầu
+        //unshift: thêm 1 hoặc nhiều phần tử ở đầu mảng
+        animals.unshift('fish2', 'cat2');
+
+        //indexOf: kiểm tra xem có phần tử trong mảng hay không, nếu không có phần tử sẽ trả về -1, nếu có sẽ trả về vị trí của phần tử trong mảng.
+        document.write(animals.indexOf('dog'));
+
+    </script>
+</body>
+</html>

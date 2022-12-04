@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cars = ['Toyota', 'Honda', 'Mercedes'];
+        console.log(cars);
+        cars.splice(1,1);
+        console.log(cars);
+
+        // Khai báo mảng với thông tin của hai sinh viên như sau
+        let students = [
+            {
+                id: 1,
+                name: "Nguyễn Văn A",
+                address: "Hà Nội"
+            },
+            {
+                id: 2,
+                name: "Trần Văn B",
+                address: "Sài Gòn"
+            }
+        ]
+        console.log(students);
+        for (let i = 0; i < students.length; i++) {
+            if(students[i].id == 2) { // Nếu sinh viên có id = 2 thì sẽ sử dụng splice để xóa sinh viên đó
+                students.splice(i,2);
+            }
+        }
+        console.log(students);
+    </script>
+</body>
+</html>

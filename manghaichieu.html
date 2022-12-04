@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Ma trận: bảng chứa các số có hàng và cột (hình vuông hoặc hình chữ nhật)
+        // Mảng 2 chiều: 1 loại mảng mà có phần tử là các mảng khác
+        let numbers = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
+        ];
+        let max = numbers[0][0];
+        document.write(numbers[0][0]); // lấy ra giá trị 1;
+        document.write(numbers[2][2]); // lấy ra giá trị 9
+        // mảng 2 chiều thì khi duyệt qua các phần tử phải dùng mảng 2 chiều: Vòng for đầu là duyệt qua các hàng (i), vòng for 2 duyệt qua các cột (j)
+
+        // Sử dụng 2 vòng for để in ra các phần tử trong mảng numbers
+        for(let i = 0; i < numbers.length; i++) {
+            for(let j = 0; j < numbers[i].length; j++) {
+                document.write(numbers[i][j]);
+            }
+        }
+
+        // tìm phần tử lớn nhất trong mảng 2 chiều.
+
+        for(let i = 0; i < numbers.length; i++) {
+            for(let j = 0; j < numbers[i].length; j++) {
+                if(max < numbers[i][j])
+                max = numbers[i][j];
+                
+            }
+        }document.write(max);
+    </script>
+</body>
+</html>

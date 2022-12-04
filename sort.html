@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hàm sort</title>
+</head>
+<body>
+    <script>
+        let cars = ["Toyota", "Subaru", "Hyundai", "BMW"];
+        cars.sort();
+        console.log(cars);
+        cars.reverse();
+        console.log(cars);
+
+        let points = [40, 1, 100, 1, 3, 23, 18];
+        points.sort(function(a,b){ // Sử dụng hàm so sánh để sắp xếp số bé đứng trước (a < b)
+            return a - b;
+        })
+        console.log(points); 
+
+        points.sort(function(a,b){ // sử dụng hàm so sánh để sắp xếp số lớn đứng trước (a < b)
+            return b - a;
+        })
+        console.log(points);
+    </script>
+</body>
+</html>
