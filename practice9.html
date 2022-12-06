@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // nhap vao m la so hang, n la so cot
+        // nhap vao cac phan tu cua ma tran co m hang, n cot
+        // tim max tong hang
+        let m = +prompt("Nhap vao so hang");
+        let n = +prompt("Nhap vao so cot");
+
+        let arr = [];
+        for (let i=0; i<m; i++){
+            arr[i] = [];
+            for (let j=0; j<n; j++){
+                arr[i][j] = +prompt("Nhap vao phan tu");
+            }
+        }
+        console.log(arr);
+        let max = 0;
+        for (let x=0; x<arr.length; x++) {
+            let total = 0;
+            for (let y=0; y<arr[x].length; y++) {
+                total += arr[x][y];
+            }
+            if(max < total){
+                max = total;
+            }
+        }
+        console.log(max);
+    </script>
+</body>
+</html>

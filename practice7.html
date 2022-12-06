@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [
+            [13, 15, 15, 12],
+            [25, 26, 27, 100],
+            [12, 13, 14, 123]
+        ]
+        // Tính tổng từng hàng:
+        // Tổng hàng 1 là:
+        // Tổng hàng 2 là:
+        // Tổng hàng 3 là:
+        
+        for (let i=0; i<arr.length; i++) {
+            let total = 0;
+            for (let j=0; j<arr[i].length; j++) {
+                total += arr[i][j];
+            }
+            document.write(total);
+        }
+    </script>
+</body>
+</html>
